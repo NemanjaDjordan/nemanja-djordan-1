@@ -1,0 +1,33 @@
+.home {
+	.img-wrap {
+		width: 50%;
+		float: left;
+	}
+	h1 {
+		width: 50%;
+		float: left;
+		margin:  55px 0 25px;
+	}
+	h2 {
+		color: $grey;
+	}
+	@include breakpoint(tablet) {
+		h1 {
+			width: 100%;
+			text-align: center;
+			font-size: 50px;
+			margin:  0 0 70px;
+		}
+		h2 {
+			text-align: center;
+		}
+		.img-wrap {
+			display: none;
+		}
+	}
+	@include breakpoint(450px) {
+		h1 {
+			font-size: 40px;
+		}
+	}
+}

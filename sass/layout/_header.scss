@@ -1,0 +1,41 @@
+.burger {
+	z-index: 1000;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	width: 47px;
+	position: fixed;
+	right: 40px;
+	top: 40px;
+	&:hover {
+		@include cursor-pointer;
+	}
+	.line {
+		width: 38px;
+		border: 1px solid $white;
+		transition: transform 1s;
+	}
+	.middle-line {
+		width: 28px;
+		margin: 12px auto;
+	}
+	@include breakpoint(phone) {
+		right: 20px;
+		top: 20px;
+	}
+}
+.navbar {
+	display: none;
+}
+.nav-item-breakpoint {
+	font-size: 50px;
+	color: $grey;
+	margin: 5% 0;
+	&:hover {
+		@include cursor-pointer;
+		color: $white;
+	}
+	@include breakpoint(phone-height) {
+		font-size: 40px;
+	}
+}

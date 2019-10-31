@@ -1,0 +1,23 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $black;
+  position: relative;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation-name: fadeIn;
+}
+.img-wrap {
+	img {
+		width: 100%;
+	}
+}

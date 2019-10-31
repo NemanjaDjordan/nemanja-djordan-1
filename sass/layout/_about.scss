@@ -1,0 +1,89 @@
+.about {
+  display: none;
+  .simple-wrap {
+    height: 52vh;
+    width: 80%;
+    margin: 0 0 0 auto;
+  }
+  .img-wrap {
+    border: 10px solid $red;
+    margin: 0 0 10px;
+  }
+  .simle-text {
+    display: block;
+  }
+  .text-wrap {
+    display: none;
+  }
+  @include breakpoint(tablet) {
+    .simple-wrap {
+      margin: 0 auto;
+      height: 70vh;
+    }
+    .img-wrap {
+      border: 5px solid $red;
+    }
+  }
+  @include breakpoint(phone) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @include breakpoint(phone-height) {
+    .simple-wrap {
+      height: 80vh;
+      width: 80%;
+      margin: 0 0 0 20%;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    .img-wrap {
+      display: none;
+    }
+  }
+}
+.header-normal {
+  font-weight: 100;
+}
+.about-btn-wrap {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  .last {
+    margin: 0;
+  }
+  @include breakpoint(phone) {
+    bottom: 12%;
+  }
+}
+.about-btn {
+  width: 22%;
+  margin: 0 5% 20px 0;
+  transition-duration: 0.5s;
+  @include cursor-pointer;
+  &:hover {
+    margin-top: -20px;
+    .small-text {
+     color: $white;
+    }
+  }
+  .small-text {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  @include breakpoint(tablet) {
+    width: 30%;
+  }
+  @include breakpoint(phone-height) {
+    width: 20%;
+    &:hover {
+      margin-top: -5px;
+    }
+    .small-text {
+      width: 30%;
+      display: ruby;
+    }
+  }
+}

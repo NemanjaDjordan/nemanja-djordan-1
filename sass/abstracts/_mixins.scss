@@ -1,0 +1,22 @@
+@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $point == phone {
+    @media (max-width: $breakpoint-phone) {
+      @content;
+    }
+  } @else if $point == phone-height {
+    @media (max-height: $breakpoint-phone-height) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $point) {
+      @content;
+    }
+  }
+}
+@mixin cursor-pointer {
+  cursor: pointer;
+}

@@ -1,0 +1,69 @@
+.work {
+	display: none;
+	z-index: -1;
+	background-image: url('../images/work-bg.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	.simple-wrap {
+		justify-content: center;
+		align-items: center;
+	}
+	h1 {
+		text-align: center;
+		margin: 0 0 40px;
+	}
+	h2 {
+		text-align: center;
+		margin: 0 0 10px;
+	}
+	.img-wrap {
+		margin: 0 auto 20px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	.small-text {
+		text-align: center;
+		color: $white;
+	}
+	@include breakpoint(phone) {
+		h1 {
+			font-size: 50px;
+		}
+	}
+	@include breakpoint(phone-height) {
+		h1 {
+			margin: 0 0 13px;
+			font-size: 35px;
+		}
+		h2,
+		.small-text {
+			display: none;
+		}
+	}
+}
+.work-sample {
+	max-width: 340px;
+	width: 30vw;
+	margin: 0 5%;
+	@include breakpoint(phone) {
+		width: 41vw;
+	}
+	@include breakpoint(400px) {
+		width: 50vw;
+	}
+	@include breakpoint(phone-height) {
+		width: 25vw;
+	}
+}
+.work-text {
+	text-align: center;
+	max-width: 330px;
+	width: 80%;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translateX(-50%);
+}

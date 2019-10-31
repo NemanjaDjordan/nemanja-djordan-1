@@ -1,0 +1,82 @@
+button {
+	border: 0;
+}
+.button-right,
+.button-left {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: $red;
+	color: $white;
+	@include breakpoint(600px) {
+		width: 30px;
+  	height: 30px;
+	}
+	@include breakpoint(phone-height) {
+		width: 50px;
+  	height: 50px;
+	}
+}
+.btn-hire {
+	display: none;
+	z-index: 1000;
+	border: 1px solid $red;
+	background: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	margin-right: -50%;
+	cursor: pointer;
+  transform: translateX(-50%);
+	transition: 0.8s;
+	overflow: hidden;
+	@include breakpoint(phone-height) {
+		left: 10%;
+	}
+}
+.btn-send {
+	position: absolute;
+	left: 50%;
+	margin: 20px 0 0;
+	@include breakpoint(phone-height) {
+		left: auto;
+		right: -44%;
+		top: 96px;
+	}
+}
+.btn {
+	border: 1px solid $red;
+	background: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.8s;
+	overflow: hidden;
+}
+.btn-hover {
+	transform: translateX(-50%);
+	color: $red;
+}
+.btn-hover:hover {
+	color: $black;
+}
+.btn::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: $red;
+	z-index: -1;
+	transition: 0.8s;
+}
+.btn-hover::before {
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+.btn-hover:hover::before {
+	height: 180%;
+}

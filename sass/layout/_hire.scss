@@ -1,0 +1,86 @@
+.hire {
+  display: none;
+  position: relative;
+  max-width: 465px;
+  width: 90%;
+}
+.pure-group {
+  .small-text {
+    color: $red;
+    font-style: italic;
+  }
+}
+.contact-data {
+  justify-content: space-between;
+  margin: 0 0 15px;
+  @include breakpoint(phone-height) {
+    flex-direction: column-reverse;
+    width: 48%;
+    margin: 0 4% 0 0;
+  }
+}
+.fieldset-email {
+   margin: 0 0 26px;
+}
+.fieldset-name {
+  margin: 0 10px 0 0;
+  @include breakpoint(phone-height) {
+    margin: 0 0 13px;
+  }
+}
+.input {
+  border: 0;
+  border-bottom: 1px solid $white;
+  background: none;
+  width: 200px;
+  color: $white;
+  padding: 10px 10px 10px 0;
+  margin: 0 0 15px;
+  font-size: 13px;
+  &::placeholder {
+    color: $grey;
+    opacity: 1;
+  }
+  @include breakpoint(phone-height) {
+    border-top: 1px solid $white;
+    margin: 0 0 7px;
+  }
+}
+.fieldset-email-message {
+  @include breakpoint(phone-height) {
+    width: 48%;
+  }
+}
+.email-message {
+  width: 100%;
+  height: 20vh;
+  max-height: 150px;
+  background: none;
+  color: $white;
+  border: 0;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+  padding: 10px 10px 10px 0;
+  margin-bottom: 20px;
+  resize: none;
+  overflow: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  &::placeholder {
+    color: $grey;
+    opacity: 1;
+  }
+  @include breakpoint(phone-height) {
+    height: 100%;
+  }
+}
+.form-elements {
+  @include breakpoint(phone-height) {
+    display: flex;
+  }
+}
+.thankyou-message {
+  display: none;
+  text-align: center;
+  font-size: 50px;
+}
