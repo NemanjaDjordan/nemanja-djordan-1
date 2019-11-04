@@ -8,6 +8,9 @@
   .img-wrap {
     border: 10px solid $red;
     margin: 0 0 10px;
+    img {
+      display: block;
+    }
   }
   .simle-text {
     display: block;
