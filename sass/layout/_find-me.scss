@@ -9,11 +9,16 @@
   .simple-wrap {
     padding: 40px;
     background-color: $black;
-    .simple-text {
-      text-align: center;
-    }
-    .black {
-      text-align: center;
+  }
+  .simple-text {
+    text-align: center;
+  }
+  .black {
+    text-align: center;
+  }
+  a {
+    &:hover {
+      color: $red;
     }
   }
   .last {
