@@ -7,17 +7,23 @@
 	position: fixed;
 	right: 40px;
 	top: 40px;
-	&:hover {
-		@include cursor-pointer;
-	}
 	.line {
 		width: 38px;
 		border: 1px solid $white;
-		transition: transform 1s;
+		transition-duration: 0.5s;
 	}
 	.middle-line {
 		width: 28px;
 		margin: 12px auto;
+	}
+	&:hover {
+		@include cursor-pointer;
+		.middle-line {
+			width: 38px;
+		}
+		.line {
+			border-color: $red;
+		}
 	}
 	@include breakpoint(phone) {
 		right: 20px;

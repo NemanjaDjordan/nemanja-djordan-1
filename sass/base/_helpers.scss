@@ -10,6 +10,8 @@
 .img-wrap {
 	img {
 		height: 100%;
+		display: block;
+		transition-duration: 0.5s;
 	}
 }
 .flex-row {
