@@ -166,17 +166,17 @@
           <div class="contact-data flex-row">
             <fieldset class="pure-group flex-column fieldset-name">
               <label for="name">Name: </label>
-              <input class="input" id="name" name="name" placeholder="What your mom calls you" />
+              <input class="input" id="name" name="name" placeholder="What your mom calls you" required/>
             </fieldset>
             <fieldset class="pure-group flex-column fieldset-email">
               <label for="email">Email:</label>
-              <input class="input" id="email" name="email" type="email" value="" placeholder="your.name@email.com"/>
+              <input class="input" id="email" name="email" type="email" required value="" placeholder="your.name@email.com"/>
               <span class="email-invalid small-text">* must be a valid email address</span>
             </fieldset>
           </div>
           <fieldset class="pure-group flex-column fieldset-email-message">
             <label for="message">Message: </label>
-            <textarea class="email-message" id="message" name="message" placeholder="Tell me what's on your mind..."></textarea>
+            <textarea class="email-message" id="message" name="message" placeholder="Tell me what's on your mind..." required></textarea>
           </fieldset>
           <div class="btn-wrap">
             <button class="btn btn-hover btn-send">Send</button>
