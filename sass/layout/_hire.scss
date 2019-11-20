@@ -3,6 +3,9 @@
   position: relative;
   max-width: 465px;
   width: 90%;
+  @include breakpoint(phone-height) {
+    overflow: auto;
+  }
 }
 .pure-group {
   .small-text {
@@ -14,9 +17,8 @@
   justify-content: space-between;
   margin: 0 0 15px;
   @include breakpoint(phone-height) {
-    flex-direction: column-reverse;
-    width: 48%;
-    margin: 0 4% 0 0;
+    width: calc(100% - 20px);
+    margin: auto;
   }
 }
 .fieldset-email {
@@ -48,7 +50,8 @@
 }
 .fieldset-email-message {
   @include breakpoint(phone-height) {
-    width: 48%;
+    width: calc(100% - 20px);
+    margin: auto;
   }
 }
 .email-message {
@@ -72,11 +75,6 @@
   }
   @include breakpoint(phone-height) {
     height: 100%;
-  }
-}
-.form-elements {
-  @include breakpoint(phone-height) {
-    display: flex;
   }
 }
 .thankyou-message {
