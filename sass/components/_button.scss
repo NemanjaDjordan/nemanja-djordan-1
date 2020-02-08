@@ -27,25 +27,6 @@ button {
   	height: 50px;
 	}
 }
-.btn-hire {
-	display: none;
-	z-index: 1000;
-	border: 1px solid $red;
-	background: none;
-	padding: 10px 20px;
-	font-size: 20px;
-	position: fixed;
-	top: 20px;
-	left: 50%;
-	margin-right: -50%;
-	cursor: pointer;
-  transform: translateX(-50%);
-	transition: 0.8s;
-	overflow: hidden;
-	@include breakpoint(phone-height) {
-		left: 10%;
-	}
-}
 .btn-send {
 	position: absolute;
 	left: 50%;
